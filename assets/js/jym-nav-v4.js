@@ -14,6 +14,7 @@
     partes:'insumos/partes/', resmas:'insumos/resmas/', insumos:'insumos/',
     productos:'productos/'
   });
+  const previewOnlyCategories = new Set(['rodillos-de-presion','rodillos-de-calor','cuchillas','cintas-rotuladoras','tintas']);
   const createWhatsapp = () => {
     if(document.querySelector('.jym-wa-float')) return;
     const a=document.createElement('a');
@@ -38,7 +39,13 @@
     if(!pieces.length)return root.href;
     const cat=pieces[0]==='insumos'?pieces[1]||'insumos':pieces[0];
     const path=categoryRoutes[cat];
-    return path?new URL(path,root).href:null;
+    if(path)return new URL(path,root).href;
+    if(previewOnlyCategories.has(cat)){
+      const target=new URL('categoria.html',root);
+      target.searchParams.set('categoria',cat);
+      return target.href;
+    }
+    return null;
   };
   document.addEventListener('click',event=>{
     if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
