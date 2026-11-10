@@ -202,3 +202,16 @@ body.jym-pdp { margin:0; background:#f7faf8; color:#20382b; font-family:'Inter',
 }
 @media(max-width:390px) { .jym-pdp-header-inner { align-items:flex-start; } .jym-pdp-nav { flex-wrap:wrap; justify-content:flex-end; } }
 @media(prefers-reduced-motion:reduce) { .jym-wa-float { transition:none; } }
+
+/* Categorías sin copia propia; ficha de ayuda visible y accesible. */
+.jym-pdp [hidden] { display:none!important; }
+.jym-cat-fallback-intro { background:#fff; border:1px solid #dbe9de; border-radius:16px; padding:38px; margin:4px 0 35px; }
+.jym-cat-fallback-intro h1 { font-family:'Manrope',Arial,sans-serif; font-size:clamp(30px,3vw,40px); margin:3px 0 15px; color:#193a2a; }
+.jym-cat-fallback-intro p { color:#4a6554; line-height:1.8; font-size:16px; max-width:780px; }
+.jym-cat-fallback-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:27px; }
+.jym-cat-fallback-actions .jym-pdp-btn { width:auto; min-width:205px; }
+@media(max-width:700px) {
+ .jym-cat-fallback-intro { padding:23px; }
+ .jym-cat-fallback-actions { display:block; }
+ .jym-cat-fallback-actions .jym-pdp-btn { width:100%; margin-top:10px; }
+}
