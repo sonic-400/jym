@@ -10,7 +10,7 @@
 body { font-family:'Inter',Arial,sans-serif; font-size:17px; color:var(--jym-ink); line-height:1.57; }
 body h1,body h2,body h3,body h4,
 body .section-title { font-family:'Manrope',Arial,sans-serif; color:#152d24; letter-spacing:-.025em; line-height:1.28; }
-body .head-main .nav-list-link,body .head-main .nav-item-desktop { font-family:'Inter',Arial,sans-serif; font-size:15px; font-weight:650; }
+body .head-main .nav-list-link,body .head-main .nav-item-desktop { font-family:'Inter',Arial,sans-serif; font-size:16px; font-weight:650; }
 body .head-main .search-input,body input[type="search"] { font-size:16px; }
 body .section-featured-home .js-item-name { color:#23372d!important; opacity:1!important; }
 body .section-featured-home .item-price { color:#087a51!important; }
@@ -196,4 +196,18 @@ body.template-contact .contact-page .btn-primary:hover { background:#055f3d; }
 @media(prefers-reduced-motion:reduce) {
  .jym-category-viewport { scroll-behavior:auto; }
  .jym-category-card:hover { transform:none; }
+}
+
+
+/* Marcas: logos grandes y desplazamiento en grupos, mismo patrón del catálogo. */
+.jym-brand-section { background:#f7faf8; padding:38px 0 45px; border-top:1px solid #e5eee7; }
+.jym-brand-section .jym-category-heading { margin-bottom:17px; }
+.jym-brand-section .jym-category-heading h2 { font-size:clamp(24px,2.5vw,32px); }
+.jym-brand-card { min-height:150px; padding:24px 18px; background:#fff; cursor:default; }
+.jym-brand-card:hover { transform:none; background:#fff; box-shadow:0 3px 14px rgba(20,69,44,.045); }
+.jym-brand-card img { display:block; object-fit:contain; max-width:100%; width:150px; height:100px; }
+@media(max-width:750px) {
+ .jym-brand-section { padding:30px 0 34px; }
+ .jym-brand-card { min-height:128px; padding:18px 12px; }
+ .jym-brand-card img { width:126px; height:80px; }
 }
