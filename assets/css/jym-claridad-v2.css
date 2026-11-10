@@ -157,3 +157,98 @@ body .section-instafeed-home h2, body .section-brands-home h2 { line-height:1.25
 @media (prefers-reduced-motion:reduce) {
  html { scroll-behavior:auto; }
 }
+
+/* Inicio: el banner estático debe verse aun sin el inicializador Swiper.
+   Toluca aplica .fade-in {opacity:0} y exige una clase de carga resuelta. */
+body.template-home .section-slider-home .js-slider-image.fade-in {
+  opacity:1!important;
+}
+
+/* Promoción para primeras compras por WhatsApp. */
+.jym-first-purchase {
+  background:#0b7650;
+  color:#fff;
+  padding:18px 20px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.jym-first-purchase .jym-first-purchase-inner {
+  max-width:1240px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px 28px;
+}
+.jym-first-purchase .jym-first-purchase-message {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  min-width:0;
+}
+.jym-first-purchase .jym-first-purchase-discount {
+  display:inline-flex;
+  align-items:baseline;
+  gap:5px;
+  flex-shrink:0;
+  white-space:nowrap;
+  font-size:30px;
+  line-height:1;
+  letter-spacing:-.04em;
+  font-weight:800;
+  color:#fff;
+}
+.jym-first-purchase .jym-first-purchase-discount small {
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.04em;
+}
+.jym-first-purchase .jym-first-purchase-copy strong {
+  display:block;
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.3;
+}
+.jym-first-purchase .jym-first-purchase-copy span {
+  display:block;
+  color:#e0fff2;
+  font-size:14px;
+  font-weight:500;
+  line-height:1.5;
+  margin-top:3px;
+}
+.jym-first-purchase .jym-first-purchase-cta {
+  flex-shrink:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  border-radius:9px;
+  padding:12px 20px;
+  min-height:45px;
+  border:1px solid #fff;
+  background:#fff;
+  color:#07593f!important;
+  text-decoration:none!important;
+  font-size:15px;
+  font-weight:800;
+  line-height:1.3;
+  transition:background .15s,transform .15s;
+}
+.jym-first-purchase .jym-first-purchase-cta:hover {
+  background:#e3faef;
+  transform:translateY(-1px);
+}
+.jym-first-purchase a:focus-visible {
+  outline:3px solid #ffd67c;
+  outline-offset:3px;
+}
+@media (max-width:750px) {
+  .jym-first-purchase { padding:16px 15px; }
+  .jym-first-purchase .jym-first-purchase-inner { flex-direction:column; align-items:stretch; gap:14px; }
+  .jym-first-purchase .jym-first-purchase-message { gap:12px; align-items:center; }
+  .jym-first-purchase .jym-first-purchase-discount { font-size:26px; }
+  .jym-first-purchase .jym-first-purchase-copy strong { font-size:16px; }
+  .jym-first-purchase .jym-first-purchase-copy span { font-size:13px; }
+  .jym-first-purchase .jym-first-purchase-cta { width:100%; }
+}
