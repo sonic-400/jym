@@ -1,0 +1,12 @@
+COPIA PUBLICA JYM ALLGRAPHICS — SIN PYTHON
+
+1. Descomprimí este ZIP.
+2. Abrí Visual Studio Code.
+3. Archivo > Abrir carpeta > JYM_ALLGRAPHICS_WEB_ORIGINAL_VSCODE.
+4. Abri INDEX.HTML (en la carpeta principal) > clic derecho > Open with Live Server.
+
+También podés hacer doble clic en index.html desde Explorador de archivos.
+
+IMPORTANTE: NO EJECUTAR BAT, NO INSTALAR PYTHON.
+La página original usa Tiendanube. Esta es una copia estática de HTML/CSS/JS públicos; carrito, login y funciones dinámicas no funcionan igual.
+Las imágenes y algunas dependencias pueden requerir Internet.

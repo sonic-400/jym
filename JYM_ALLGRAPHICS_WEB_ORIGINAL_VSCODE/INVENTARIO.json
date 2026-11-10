@@ -1,0 +1,31 @@
+{
+  "fecha_captura": "2026-11-08",
+  "dominio": "https://www.jymallgraphics.com.ar",
+  "paginas_copiadas": [
+    "/",
+    "/productos/",
+    "/insumos/",
+    "/insumos/toner/",
+    "/insumos/cartuchos/",
+    "/insumos/drum/",
+    "/insumos/fusores/",
+    "/insumos/cilindros-opc/",
+    "/insumos/chip/",
+    "/insumos/revelador/",
+    "/insumos/filminas/",
+    "/insumos/partes/",
+    "/insumos/resmas/",
+    "/contacto/",
+    "/quienes-somos/",
+    "/productos/toner-alternativo-hp-laserjet-m552-mfp-m577-m553dn-508x/"
+  ],
+  "archivos_tema": [
+    "assets/js/linkedstore-v2.js",
+    "assets/css/dart-style-critical.css",
+    "assets/css/dart-style-colors.css",
+    "assets/css/dart-style-async.css"
+  ],
+  "errores_http": [],
+  "limitaciones": "Recursos multimedia y servicios remotos requieren Internet; backend de Tiendanube no copiado",
+  "paginas_locales": 16
+}
